@@ -10,29 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	size_t i;
+	size_t	i;
+
 	i = 0;
 	while (s[i])
 		i++;
-	if((unsigned char)s[i] == (unsigned char)c)
+	if ((unsigned char)s[i] == (unsigned char)c)
 		return ((char *)s + i);
 	while (i > 0)
 	{
 		i--;
 		if ((unsigned char)s[i] == (unsigned char)c)
-			return (char *)s + i;
+			return ((char *)s + i);
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	printf("%s",ft_strrchr("banana", '\0'));
-
-// 	return 0;
-// }

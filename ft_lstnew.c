@@ -1,8 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aakioud <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/21 12:05:27 by aakioud           #+#    #+#             */
+/*   Updated: 2026/10/21 12:05:29 by aakioud          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-t_list *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
-	t_list *ptr ;
+	t_list	*ptr ;
+
 	ptr = malloc(sizeof(t_list));
 	if (!ptr)
 		return (NULL);

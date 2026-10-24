@@ -9,20 +9,18 @@
 /*   Updated: 2026/10/18 10:26:21 by aakioud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdlib.h>
 #include "libft.h"
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-	char *ptr;
-	size_t slen;
-	size_t i;
+	char	*ptr;
+	size_t	slen;
+	size_t	i;
 
 	i = 0;
 	slen = ft_strlen(s);
 	ptr = malloc(slen + 1);
-	if(ptr == NULL)
+	if (ptr == NULL)
 		return (NULL);
 	while (i < slen)
 	{

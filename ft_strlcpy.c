@@ -10,12 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-size_t ft_strlcpy(char *dst, const char *src, size_t size)
+#include "libft.h"
+
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t srcl ;
-	size_t i;
+	size_t	srcl ;
+	size_t	i;
+
 	i = 0;
 	srcl = 0;
 	while (src[srcl])
@@ -30,18 +31,3 @@ size_t ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (srcl);
 }
-// int main()
-// {
-// 	char src[] = "hello world";
-// 	char dst[5] ;
-// 	// int i = 0 ;
-// 	printf("%d\n",ft_strlcpy(dst,src,5));
-// 	printf("%s",dst);
-// 	// while (i < 32)
-// 	// {
-// 	// 	printf("%c",dst[i]);
-// 	// 	i++;
-// 	// }
-	
-// 	return 0;
-// }

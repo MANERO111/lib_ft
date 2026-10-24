@@ -9,16 +9,14 @@
 /*   Updated: 2026/10/18 10:26:39 by aakioud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdlib.h>
 #include "libft.h"
 
-void *ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	char *p;
-	size_t l;
-	
-	if(nmemb == 0 || size == 0)
+	char	*p;
+	size_t	l;
+
+	if (nmemb == 0 || size == 0)
 		return (malloc(1));
 	if (nmemb > ((size_t) - 1) / size)
 		return (NULL);
@@ -26,16 +24,6 @@ void *ft_calloc(size_t nmemb, size_t size)
 	p = malloc(l);
 	if (p == NULL)
 		return (NULL);
-	ft_bzero(p,l);
+	ft_bzero(p, l);
 	return ((void *)p);
 }
-// int main()
-// {
-// 	char *p = malloc(5);
-// 	printf("%p\n" , p);
-// 	free(p);
-// 	p = NULL;
-// 	free(NULL);
-// 	free(p);
-// 	printf("%p\n", p);
-// }

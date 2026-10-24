@@ -1,5 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aakioud <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/21 12:07:11 by aakioud           #+#    #+#             */
+/*   Updated: 2026/10/21 12:07:13 by aakioud          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
 
@@ -12,12 +23,3 @@ void ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-// #include <stdio.h>
-
-// int main()
-// {
-// 	char s[] = "amjad how are u";
-// 	ft_striteri(s,&make_upper);
-// 	printf("%s\n",s);
-
-// }

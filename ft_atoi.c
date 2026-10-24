@@ -11,9 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "libft.h"
-
-#include <string.h>
 
 int	ft_atoi(const char *nptr)
 {
@@ -40,16 +37,4 @@ int	ft_atoi(const char *nptr)
 		result = result * 10 + (*nptr++ - '0');
 	}
 	return ((int)(result * sign));
-}
-
-#include <stdlib.h>
-#include <stdio.h>
-
-int main()
-{
-
-
-printf("%d | %d\n", ft_atoi("30584300921369395200000"), atoi("30584300921369395200000"));
-
-	return 0;
 }

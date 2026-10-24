@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 static size_t	count_words(char const *s, char c)
@@ -89,19 +88,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ptr);
 }
-// #include <stdio.h>
-
-// int main()
-// {
-// 	printf("count : %zu",count_words(" hello,,amjad ",','));
-// 	char **c = ft_split(",,,hello,,,amjad,how,are,you",'\0');
-// 	int i = 0;
-// 	while (c[i])
-// 	{
-// 		printf("%s\n",c[i]);
-// 		free(c[i]);
-// 		i++;
-// 	}
-// 	free(c);
-// 	return 0;
-// }

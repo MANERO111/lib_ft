@@ -1,10 +1,22 @@
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aakioud <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/21 12:06:50 by aakioud           #+#    #+#             */
+/*   Updated: 2026/10/21 12:06:51 by aakioud          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_putstr_fd(char *s, int fd)
+#include "libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
 {
-	int i ;
+	int	i;
 
-	if(!s)
+	if (!s)
 		return ;
 	i = 0;
 	while (s[i])
@@ -13,9 +25,3 @@ void ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-
-// int main()
-// {
-// 	ft_putstr_fd("amjad how are u \n",1);
-// 	return 0;
-// }

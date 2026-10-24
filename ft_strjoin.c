@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -40,9 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	p[i] = '\0';
 	return (p);
 }
-// #include <stdio.h>
-
-// int main()
-// {
-// 	printf("%s", ft_strjoin(NULL,NULL));
-// }

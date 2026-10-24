@@ -10,11 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
-	size_t i;
+	size_t	i;
+
 	i = 0;
 	while (s[i])
 	{
@@ -24,12 +25,5 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if (s[i] == '\0' && (unsigned char)c == '\0')
 		return ((char *)s + i);
-	return(NULL);
+	return (NULL);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-	// printf("%s",strchr("bananas", 140));
-	// return 0;
-// }
