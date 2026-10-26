@@ -35,8 +35,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	first = 0;
 	k = 0;
-	if (!s1 || !set)
-		return (NULL);
+	if (s1 && !set)
+		return (ft_strdup(s1));
+	if (!s1 && set)
+		return ("");
 	while (s1[first] && isthere(set, s1[first]))
 		first++;
 	last = ft_strlen(s1);
